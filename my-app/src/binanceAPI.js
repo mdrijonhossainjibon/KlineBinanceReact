@@ -34,7 +34,7 @@ const subscribeKline = (symbol, interval, callback) => {
 const baseUrl = "https://api.binance.com";
 
 async function fetchKline(symbol, interval) {
-  const url = `${baseUrl}/api/v3/klines?symbol=TRXUSDT&interval=30m&limit=500`;
+  const url = `${baseUrl}/api/v3/klines?symbol=${symbol.toLowerCase()}T&interval=${interval}m&limit=500`;
 
   try {
     const response = await fetch(url);
