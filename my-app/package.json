@@ -2,6 +2,7 @@
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
+  "proxy": "https://api.binance.com/",
   "dependencies": {
     "@ant-design/icons": "^5.0.1",
     "@ant-design/react-slick": "^1.0.1",

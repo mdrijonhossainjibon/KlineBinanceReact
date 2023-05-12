@@ -1,5 +1,7 @@
 import React from "react";
 import get from "lodash/get";
+import { setKlineData } from "../../modules";
+import { useDispatch } from "react-redux";
 import { ConvertUsd } from "../../components/ConvertUsd";
 import playSvg from "../../assets/images/trading/play.svg";
 //import './toolbar.css';
@@ -93,6 +95,9 @@ const HeaderToolbarStyle = styled.div`
 `;
 
 export const HeaderToolbar = () => {
+  const dispatch = useDispatch();
+
+  
   const currentMarket = {
     id: "btc",
     quote_unit: "USDT",
