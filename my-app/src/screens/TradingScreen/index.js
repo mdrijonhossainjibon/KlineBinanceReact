@@ -1,6 +1,7 @@
 import "./a.css";
 import { Trading_CHART } from "../../charting_library";
 import { HeaderToolbar } from "./HeaderToolbar";
+import { Containers } from "../../containers";
 export const TradingScreen = () => {
   return (
     <div className="td-pg-trading">
@@ -13,13 +14,13 @@ export const TradingScreen = () => {
         <HeaderToolbar />
       </div>
       <div className="td-pg-trading--bg td-pg-trading__item td-pg-trading--bg td-pg-trading__market-trading">
-        MarketTrading
+        <Containers.MarketTrading/>
       </div>
       <div className="td-pg-trading--bg td-pg-trading__item td-pg-trading--bg td-pg-trading__order-book">
         NewOrderBook
       </div>
       <div className="td-pg-trading--bg td-pg-trading__item td-pg-trading--bg td-pg-trading__trading-chart app">
-        <Trading_CHART />
+        <Trading_CHART/>
       </div>
       <div className="td-pg-trading--bg td-pg-trading__item td-pg-trading--bg td-pg-trading__order">
         NewOrder
